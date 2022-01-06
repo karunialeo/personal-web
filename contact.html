@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Me | Karunia Leo Gultom</title>
+
+    <!-- Developer CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-form.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav>
+      <div class="nav-menu">
+        <a href="index.html" class="nav-img">
+          <img src="assets/favicon.png" alt="logo" />
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#" class="disabled" aria-disabled="true">Blog</a></li>
+        </ul>
+      </div>
+      <div class="nav-contact-button">
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Start Content -->
+    <section class="contact-form">
+      <div class="contact-header">
+        <h2>Contact Me</h2>
+      </div>
+
+      <form action="" method="">
+        <div>
+          <label for="name">
+            Name
+            <span class="red">*</span>
+            <span class="tooltiptext">required</span>
+          </label>
+          <input id="name" name="name" id="name" type="text" autofocus />
+        </div>
+
+        <div class="flex-column">
+          <div class="form-email">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" />
+          </div>
+
+          <div class="form-number">
+            <label for="number">
+              Phone
+              <span class="red">*</span>
+              <span class="tooltiptext">required</span>
+            </label>
+            <input id="number" name="number" type="number" />
+          </div>
+        </div>
+
+        <div>
+          <label for="checkbox">
+            Skill
+            <span class="red">*</span>
+            <span class="tooltiptext">
+              required (select other if not listed)
+            </span>
+          </label>
+
+          <fieldset class="checkbox" id="checkbox">
+            <div class="cb-html">
+              <input
+                type="checkbox"
+                name="skill"
+                onclick="onlyOne(this)"
+                id="html"
+                value="html"
+              />
+              <label for="html">HTML</label>
+            </div>
+            <div class="cb-css">
+              <input
+                type="checkbox"
+                name="skill"
+                onclick="onlyOne(this)"
+                id="css"
+                value="css"
+              />
+              <label for="css">CSS</label>
+            </div>
+            <div class="cb-js">
+              <input
+                type="checkbox"
+                name="skill"
+                onclick="onlyOne(this)"
+                id="js"
+                value="js"
+              />
+              <label for="js">Javascript</label>
+            </div>
+            <div class="cb-other">
+              <input
+                type="checkbox"
+                name="skill"
+                onclick="onlyOne(this)"
+                id="other"
+                value="other"
+              />
+              <label for="other">Other</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                class="cb-hidden"
+                value=""
+                name="skill"
+                hidden
+                checked
+              />
+            </div>
+          </fieldset>
+        </div>
+
+        <div>
+          <label for="subject">
+            Subject
+            <span class="red">*</span>
+            <span class="tooltiptext">required</span>
+          </label>
+          <select name="subject" id="subject">
+            <option value="">Select Subject</option>
+            <option value="Privacy Police">Privacy Police</option>
+            <option value="Problem With Our Site">Problem With Our Site</option>
+            <option value="Questions On Order">Questions On Order</option>
+            <option value="Other Questions">Other Questions</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">
+            Message
+            <span class="red">*</span>
+            <span class="tooltiptext">required</span>
+          </label>
+          <textarea
+            name="message"
+            id="message"
+            cols="20"
+            rows="5"
+            minlength="10"
+          ></textarea>
+        </div>
+
+        <div class="submit-button">
+          <button type="button" onclick="submitData()">Submit</button>
+          <span class="submit-redirect-button dis-none">
+            Redirecting . . .
+          </span>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        | <a href="index.html">Karunia Leo Gultom</a>
+      </p>
+    </footer>
+    <!-- Footer End -->
+    <!-- End Content -->
+    <script src="form.js"></script>
+  </body>
+</html>
