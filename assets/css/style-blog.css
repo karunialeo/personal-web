@@ -35,8 +35,9 @@ select {
   padding: 8px;
   margin-top: 5px;
   margin-bottom: 20px;
-  background: #f4f3f3;
-  border: 1px solid #c4c4c4;
+  background: var(--white);
+  border: 1px solid var(--lightgray);
+  box-shadow: 0 0 7px var(--lightgray);
   border-radius: 8px;
 }
 
@@ -51,8 +52,9 @@ select {
   padding: 8px;
   margin-top: 5px;
   margin-bottom: 20px;
-  background: #f4f3f3;
-  border: 1px solid #c4c4c4;
+  background: var(--white);
+  border: 1px solid var(--lightgray);
+  box-shadow: 0 0 7px var(--lightgray);
   border-radius: 8px;
   cursor: pointer;
   box-sizing: border-box;
@@ -82,6 +84,34 @@ select {
   border: none;
   color: #fff;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.blog-form form button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--gray);
+}
+
+@media screen and (max-width: 1200px) {
+  .blog-form .form-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .blog-form .form-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blog-form .form-container {
+    width: 90%;
+  }
+
+  .blog-form .form-container h1 {
+    margin-top: 40px;
+  }
 }
 
 .blog hr {
@@ -171,6 +201,29 @@ select {
   text-align: right;
   font-size: 0.7rem;
   color: var(--gray);
+}
+
+@media screen and (max-width: 768px) {
+  .blog .blog-list .blog-list-item {
+    display: block;
+  }
+
+  .blog .blog-list .blog-list-item .blog-content h1 {
+    font-size: 1.3rem;
+  }
+
+  .blog .blog-list .blog-list-item p {
+    margin-bottom: 20px;
+  }
+
+  .blog .blog-list .blog-list-item .blog-image img {
+    margin-bottom: 30px;
+  }
+
+  .btn-edit,
+  .btn-post {
+    margin-left: 5px;
+  }
 }
 
 /* Blog Detail */

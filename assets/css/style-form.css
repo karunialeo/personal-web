@@ -1,3 +1,10 @@
+:root {
+  --blue: #246084;
+  --white: #f4f3f3;
+  --lightgray: #b4b4b4;
+  --gray: #858585;
+}
+
 /* Contact Page CSS */
 section.contact-form h2 {
   text-align: center;
@@ -65,7 +72,7 @@ select,
 textarea {
   background-color: var(--white);
   width: 100%;
-  border: 1px solid var(--gray);
+  border: 1px solid var(--lightgray);
   border-radius: 5px;
   padding: 10px;
   margin: 12px 0;
@@ -89,12 +96,6 @@ form .checkbox label:not(:last-child) {
   margin-right: 30px;
 }
 
-form button:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px var(--gray);
-  transition: 0.3s ease;
-}
-
 form button {
   color: var(--white);
   background-color: var(--blue);
@@ -102,6 +103,12 @@ form button {
   border: unset;
   border-radius: 10px;
   margin-right: 10px;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--gray);
 }
 
 .submit-redirect-button {
@@ -139,7 +146,7 @@ form button {
   }
 
   section.contact-form h2 {
-    margin-top: 80px;
+    margin-top: 90px;
   }
 
   form {
