@@ -69,7 +69,7 @@ function blogDefaultContent() {
   return `
   <div class="blog-list-item">
     <div class="blog-image">
-      <img src="assets/blog-img.png" alt="" />
+      <img src="assets/img/blog-img.png" alt="" />
     </div>
     <div class="blog-content">
       <div class="btn-group">
