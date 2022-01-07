@@ -8,8 +8,14 @@ function submitData() {
 
     const redirectMessage = document.querySelector('.submit-redirect-button')
 
+    const alertMessage = document.getElementById('form-alert')
+    const alertBtn = document.getElementById('close-alert-button')
+
     if(name == '' || number == '' || skill == '' || subject == '' || message == '') {
-        alert('Please fill all required fields.')
+        alertMessage.style.zIndex = '2'
+        alertBtn.addEventListener('click', function() {
+            alertMessage.style.zIndex = '-1'
+        })
         
     } else {
         const emailReceiver = 'karunialeo@mail.com'

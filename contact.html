@@ -43,7 +43,7 @@
           <label for="name">
             Name
             <span class="red">*</span>
-            <span class="tooltiptext">required</span>
+            <span class="tooltiptext tooltip-name">required</span>
           </label>
           <input id="name" name="name" id="name" type="text" autofocus />
         </div>
@@ -58,7 +58,7 @@
             <label for="number">
               Phone
               <span class="red">*</span>
-              <span class="tooltiptext">required</span>
+              <span class="tooltiptext tooltip-number">required</span>
             </label>
             <input id="number" name="number" type="number" />
           </div>
@@ -68,7 +68,7 @@
           <label for="checkbox">
             Skill
             <span class="red">*</span>
-            <span class="tooltiptext">
+            <span class="tooltiptext tooltip-skill">
               required (select other if not listed)
             </span>
           </label>
@@ -131,7 +131,7 @@
           <label for="subject">
             Subject
             <span class="red">*</span>
-            <span class="tooltiptext">required</span>
+            <span class="tooltiptext tooltip-subject">required</span>
           </label>
           <select name="subject" id="subject">
             <option value="">Select Subject</option>
@@ -146,7 +146,7 @@
           <label for="message">
             Message
             <span class="red">*</span>
-            <span class="tooltiptext">required</span>
+            <span class="tooltiptext tooltip-message">required</span>
           </label>
           <textarea
             name="message"
@@ -165,6 +165,22 @@
         </div>
       </form>
     </section>
+
+    <!-- Alert Section -->
+    <div class="form-alert" id="form-alert">
+      <div class="form-alert-box">
+        <div class="form-alert-close">
+          <button
+            class="white"
+            id="close-alert-button"
+            onclick="alertMessage.style.zIndex('-1')"
+          >
+            <span>[&times;]</span>
+          </button>
+        </div>
+        <p>Please fill all required fields</p>
+      </div>
+    </div>
 
     <!-- Footer Section -->
     <footer>
