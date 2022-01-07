@@ -193,7 +193,7 @@ body .form-alert {
 
 .form-alert-box {
   width: 30%;
-  height: 20%;
+  height: 15%;
   background-color: #f4f3f3;
   border: 1px solid var(--lightgray);
   box-shadow: 0 0 10px var(--lightgray);
@@ -210,6 +210,6 @@ body .form-alert {
 }
 .form-alert-close {
   position: fixed;
-  top: 35%;
+  top: 36%;
   left: 65%;
 }
