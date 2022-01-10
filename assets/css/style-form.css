@@ -124,7 +124,7 @@ form button:hover {
 
 @media screen and (max-width: 1200px) {
   form {
-    width: 70%;
+    width: 60%;
     box-sizing: border-box;
   }
   form .flex-column div {
@@ -153,7 +153,15 @@ form button:hover {
   }
 
   form {
-    width: 80%;
+    color: var(--gray);
+    background-color: var(--white);
+    font-weight: 400;
+    font-size: 18px;
+    width: 100%;
+    padding: 30px;
+    border-radius: none;
+    box-shadow: none;
+    margin: 0 auto 50px;
   }
 
   form fieldset {
@@ -166,10 +174,6 @@ form button:hover {
 
   form .submit-button {
     display: block;
-  }
-
-  form .checkbox label:not(:last-child) {
-    margin-right: 5px;
   }
 }
 
